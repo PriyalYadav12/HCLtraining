@@ -1,0 +1,73 @@
+public class StringOperations {
+
+    public static void main(String[] args) {
+
+        String s1 = "  Hello Java Programming  ";
+        String s2 = "Java";
+
+        // length()
+        System.out.println("Length: " + s1.length());
+
+        // isEmpty()
+        System.out.println("Is Empty: " + s1.isEmpty());
+
+        // charAt()
+        System.out.println("Char at index 2: " + s1.charAt(2));
+
+        // toString()
+        StringBuffer sb = new StringBuffer("Hello");
+        System.out.println("toString(): " + sb.toString());
+
+        // equals()
+        System.out.println("Equals: " + s2.equals("Java"));
+
+        // compareTo()
+        System.out.println("CompareTo: " + s2.compareTo("Java"));
+
+        // contains()
+        System.out.println("Contains 'Java': " + s1.contains("Java"));
+
+        // indexOf()
+        System.out.println("IndexOf 'Java': " + s1.indexOf("Java"));
+
+        // lastIndexOf()
+        System.out.println("LastIndexOf 'a': " + s1.lastIndexOf('a'));
+
+        // startsWith()
+        System.out.println("StartsWith '  Hello': " + s1.startsWith("  Hello"));
+
+        // endsWith()
+        System.out.println("EndsWith 'Programming  ': " + s1.endsWith("Programming  "));
+
+        // matches()
+        System.out.println("Matches regex: " + s2.matches("[A-Za-z]+"));
+
+        // substring()
+        System.out.println("Substring: " + s1.substring(2, 7));
+
+        // toLowerCase()
+        System.out.println("Lowercase: " + s1.toLowerCase());
+
+        // trim()
+        System.out.println("Trim: '" + s1.trim() + "'");
+
+        // replace()
+        System.out.println("Replace Java with Python: " + s1.replace("Java", "Python"));
+
+        // split()
+        String[] parts = s1.trim().split(" ");
+        System.out.println("Split:");
+        for (String p : parts) {
+            System.out.println(p);
+        }
+
+        // join()
+        String joined = String.join("-", "Java", "Python", "C++");
+        System.out.println("Join: " + joined);
+
+        // valueOf()
+        int num = 100;
+        String strNum = String.valueOf(num);
+        System.out.println("ValueOf: " + strNum);
+    }
+}
